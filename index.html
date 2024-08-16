@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALIDATION FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="section">
+        <h1>WELCOME</h1>
+        <form name="validateform" onsubmit="return validationform()">
+            <input type="text" name="fname" placeholder="FIRSTNAME: "><br>
+            <input type="text" name="lname" placeholder="LASTNAME: "><br>
+            <input type="text" name="city" placeholder="CITY: "><br>
+            <input type="number" name="phonenumber" placeholder="PHONENUMBER: "><br>
+            <textarea name="address" placeholder="ADDRESS: "></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function validationform() {
+            var fname = document.forms["validateform"]["fname"].value;
+            var lname = document.forms["validateform"]["lname"].value;
+            var city = document.forms["validateform"]["city"].value;
+            var phonenumber = document.forms["validateform"]["phonenumber"].value;
+            var address = document.forms["validateform"]["address"].value;
+            
+            if (fname == null || fname == "") {
+                alert("Enter your First Name");
+                return false;
+            } else if (lname == null || lname == "") {
+                alert("Enter your Last Name");
+                return false;
+            } else if (city == null || city == "") {
+                alert("Enter your City");
+                return false;
+            } else if (phonenumber == null || phonenumber == "") {
+                alert("Enter your Phone Number");
+                return false;
+            } else if (address == null || address == "") {
+                alert("Enter your Address");
+                return false;
+            } else {
+                alert("LOGIN SUCCESSFULLY");
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

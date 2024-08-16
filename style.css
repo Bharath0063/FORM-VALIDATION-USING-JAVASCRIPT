@@ -1,0 +1,44 @@
+.section{
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 195px;
+    margin-right: 195px;
+    font-size: 20px;
+    background-color: brown;
+    height: 550px;
+}
+h1{
+    color: beige;
+}
+input{
+    margin: 20px 20px 20px 30px;
+    width: 350px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+button{
+    height: 32px;
+    width: 130px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border-style: none;
+}
+textarea{
+    margin: 20px 20px 20px 30px;
+    width: 350px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 500;
+}
+::placeholder{
+    font-size: 15px;
+}
+input:hover{
+    border: 3px solid black;
+}
+textarea:hover{
+    border: 3px solid black;
+}
